@@ -158,7 +158,7 @@ describe 'CSV Practice Methods' do
       # Assert
       last_medal = sorted_medal_list.first
       sorted_medal_list.each do |current_entry|
-        expect(last_medal[:country] <= current_entry[:country]).must_equal true
+        expect(last_medal["country"] <= current_entry["country"]).must_equal true
         
         last_medal = current_entry
       end
